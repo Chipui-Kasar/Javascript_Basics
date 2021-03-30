@@ -1,5 +1,5 @@
 // year 1976    - is a leap year or not
-//1976/4   && 1976/100  && 1976/400 -->if all this condt is satisfied then it is a leap year
+//1976/4   && 1976/100  && 1976/400 -->if all this condition is satisfied then it is a leap year
 //year / 4 and not divisible by 100 --> Leap year
 //year/100  --? year/400    --> Leap year
 

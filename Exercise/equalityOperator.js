@@ -1,6 +1,6 @@
 // == && ===
 var number = "2";
-//number is a string
+//number is a strings
 //
 
 if (number == 2) {

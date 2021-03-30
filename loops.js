@@ -7,7 +7,7 @@ if (ticket) {
   console.log("Permitted to travel");
 }
 
-//if else loop
+//if else loops
 if (ticket) {
   console.log("Permitted to travel");
 } else {

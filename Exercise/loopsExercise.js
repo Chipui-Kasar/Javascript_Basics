@@ -1,4 +1,4 @@
-// people need to enter into an hospital
+// people needs to enter into an hospital
 // if they have PatientID --> enter into the hospital ---> if loop
 // var patientID = true;
 // var employeeID = true;

@@ -1,6 +1,6 @@
 //to store multiple data in a variable
 //storing of data
-//is called an array
+//is called an arrays
 
 //declaring an array
 var shoppingList = ["rice", "maggi", "shampoo", "dal"];

@@ -14,6 +14,7 @@
 //   default:
 //     console.log("Sorry not allowed to enter");
 // }
+//try it
 
 //reusing the funtion
 var a = 1;

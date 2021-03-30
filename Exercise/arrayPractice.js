@@ -9,7 +9,7 @@
 //try pop() for last element
 //push()
 //unshift
-//shift
+//shift p
 
 var students = [
   [

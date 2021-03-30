@@ -28,7 +28,7 @@ if (result) {
 
 //do it using function
 
-var numberOne = 25;
+var numberOne = 26;
 var numberTwo = 25;
 
 magicalNUmber(numberOne, numberTwo);
