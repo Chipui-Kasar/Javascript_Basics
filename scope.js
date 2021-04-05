@@ -76,6 +76,7 @@ numbers.map(num => {
     console.log(num);
   }
 });
+
 //checking it different way
 numbers = [52, 61, 74];
 const result = numbers.map(num => (num % 2 === 0 ? num + 2 : num));
@@ -117,18 +118,15 @@ pilots.forEach(pilot => {
 
 console.log(`Normal way : ${totalYears}`);
 
-// var a;
-// console.log(a + 2);
-
-// let totalYearsUsingReduce = pilots.reduce(function (lastValue, pilot) {
-//   console.log(lastValue);
-//   return lastValue + pilot.years;
-//   // return accumulator + pilot.years; // 14+ 14 =28 1st iteration
-//   //28+30 =46 2nd iteration
-//   //46 + 16 =62 3rd iteration
-//   // 60 + 22 = 82 4th iteration
-// }, 0);
-
+//using reduce
+let totalYearsUsingReduce = pilots.reduce(function (accumulator, pilot) {
+  console.log(accumulator);
+  return accumulator + pilot.years; // 14+ 14 =28 1st iteration
+  //28+30 =46 2nd iteration
+  //46 + 16 =62 3rd iteration
+  // 60 + 22 = 82 4th iteration
+}, 0);
+//different method
 let totalYearsUsingReduce = pilots.reduce(
   (lastValue, pilot) => lastValue + pilot.years,
   0
