@@ -1,15 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const student = [
-    {
-      name: "Sobylal",
-      class: "Javascript",
-    },
-    {
-      name: "Chipui",
-      class: "HTML Css",
-    },
-  ];
-  function getLabel() {
-    var studentLabel = document.querySelectorAll("label");
-  }
-});
+var myElement = document.getElementById("sample");
+var data = document.getElementById("sample").innerHTML;
+
+var rewritedata = "Hello advance javascript";
+document.getElementById("sample").innerHTML = rewritedata;
+setTimeout(changeImage);
+
+console.log(myElement);
+console.log(data);
