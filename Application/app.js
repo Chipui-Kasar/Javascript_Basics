@@ -1,9 +1,20 @@
-var myElement = document.getElementById("sample");
-var data = document.getElementById("sample").innerHTML;
+document.addEventListener("DOMContentLoaded", () => {
+  var myElement = document.getElementById("sample");
+  var data = document.getElementById("sample").innerHTML;
 
-var rewritedata = "Hello advance javascript";
-document.getElementById("sample").innerHTML = rewritedata;
-setTimeout(changeImage);
+  var datarewrite = "hello advance javscript";
 
-console.log(myElement);
-console.log(data);
+  document.getElementById("sample").innerHTML = datarewrite;
+
+  setInterval(changeBirdImage, 5000); // 5000 mili seconds
+
+  console.log(myElement);
+
+  console.log(` the data we are looking is "${data}"`);
+
+  function changeBirdImage() {
+    console.log("entering here");
+    var birdImage = document.getElementById("bird");
+    birdImage.setAttribute("src", "sample2.jpg");
+  }
+});
