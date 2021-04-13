@@ -69,11 +69,12 @@ console.log(bike2.name);
 //Encapsulation
 class persont {
   constructor(name, id) {
+    let addresses = "";
     this.name = name;
     this.id = id;
   }
   add_address(address) {
-    this.address = address;
+    this.addresses = address;
   }
   getDetails() {
     console.log(`${this.name} + ${this.id}`);
@@ -82,3 +83,31 @@ class persont {
 let personv = new persont("VIgnesh", 12);
 personv.add_address("Delhi");
 console.log(personv.address);
+
+//Inheritance
+//car driving(), usinfbreak()
+//maruti driving(), usingbreak()
+
+class car {
+  constructor(sterring, carBreak, gear) {
+    this.sterring = sterring;
+    this.carBreak = carBreak;
+    this.gear = gear;
+  }
+  driving() {
+    return `We are using ${this.sterring}, & ${this.carBreak}, ${this.gear}`;
+  }
+}
+
+class maruti extends car {
+  constructor(sterring, carBreak, gear, music) {
+    super(sterring, carBreak, gear);
+    this.music = music;
+  }
+  driving() {
+    return `${super.driving()} ${super.music}`;
+  }
+}
+
+let maruticar = new maruti("Boschsterring", "Mitshubi", "havells", "harman");
+console.log(maruticar.driving());
