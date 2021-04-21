@@ -12,7 +12,7 @@ link();
 
 //destructing feature
 array = [1, 2, 3, 4, 5];
-var [, a, , b] = array;
+var [, a, , , b] = array;
 console.log(a);
 console.log(b);
 
